@@ -15,18 +15,13 @@ const mainNavItems = [
     items: [
       {
         title: "Features",
-        href: "/features",
+        href: "#features",
         description: "Explore our core features and capabilities",
       },
       {
-        title: "Use Cases",
-        href: "/use-cases",
-        description: "See how MCP Crawler solves real-world problems",
-      },
-      {
-        title: "Pricing",
-        href: "/pricing",
-        description: "Transparent, usage-based pricing plans",
+        title: "Case studies",
+        href: "#case-studies",
+        description: "Real-world implementation examples",
       },
     ],
   },
@@ -35,38 +30,13 @@ const mainNavItems = [
     items: [
       {
         title: "Documentation",
-        href: "/docs",
+        href: "#documentation",
         description: "Complete API reference and guides",
       },
       {
         title: "API Reference",
-        href: "/api",
+        href: "/",
         description: "Detailed API documentation",
-      },
-      {
-        title: "SDK Downloads",
-        href: "/sdk",
-        description: "Get started with our SDKs",
-      },
-    ],
-  },
-  {
-    title: "Resources",
-    items: [
-      {
-        title: "Blog",
-        href: "/blog",
-        description: "Technical articles and updates",
-      },
-      {
-        title: "Case Studies",
-        href: "/case-studies",
-        description: "Real-world implementation examples",
-      },
-      {
-        title: "Community",
-        href: "/community",
-        description: "Join our developer community",
       },
     ],
   },

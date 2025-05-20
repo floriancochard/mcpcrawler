@@ -1,16 +1,20 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Section from "@/components/section";
+import { PersonStanding } from "lucide-react";
 
 export function CaseStudies() {
   return (
-    <Section>
+    <Section id="case-studies">
       <div className="flex flex-col items-start space-y-4 text-left">
-        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Real-World Implementation Results
-        </h2>
+        <span className="inline-flex items-center gap-2 bg-muted px-4 py-2 rounded-full text-xs font-medium w-fit">
+          <PersonStanding className="w-4 h-4 text-primary" />
+          Real-world examples
+        </span>
+
+        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Case-study</h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          See how our customers are transforming their data pipelines
+          See how our customers are transforming their data pipelines.
         </p>
       </div>
       <div className="grid gap-8">
@@ -18,7 +22,7 @@ export function CaseStudies() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* Case Study 1 */}
           <div className="rounded-lg border bg-card p-6">
-            <h3 className="mb-2 text-lg font-semibold">E-commerce Documentation</h3>
+            <h3 className="mb-2 text-lg font-semibold">E-commerce merchant</h3>
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">
                 <strong>Challenge:</strong> 50,000+ product pages with inconsistent layouts
@@ -37,16 +41,16 @@ export function CaseStudies() {
 
           {/* Case Study 2 */}
           <div className="rounded-lg border bg-card p-6">
-            <h3 className="mb-2 text-lg font-semibold">Legal Knowledge Base</h3>
+            <h3 className="mb-2 text-lg font-semibold">Legal firm</h3>
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">
-                <strong>Challenge:</strong> Complex legal documents across jurisdictions
+                <strong>Challenge:</strong> Complex legal documents distributed across jurisdictions
               </p>
               <p className="text-sm text-muted-foreground">
                 <strong>Solution:</strong> LLM-assisted extraction code generation
               </p>
               <p className="text-sm text-muted-foreground">
-                <strong>Results:</strong> Real-time legal database, 99.5% uptime
+                <strong>Results:</strong> Real-time legal database, 99.995% uptime
               </p>
               <Button variant="link" asChild className="mt-2 p-0">
                 <Link href="/case-studies/legal">Read Case Study →</Link>
@@ -56,7 +60,7 @@ export function CaseStudies() {
 
           {/* Case Study 3 */}
           <div className="rounded-lg border bg-card p-6">
-            <h3 className="mb-2 text-lg font-semibold">Technical Documentation</h3>
+            <h3 className="mb-2 text-lg font-semibold">Ads company</h3>
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">
                 <strong>Challenge:</strong> Fragmented docs across 20+ portals
@@ -75,7 +79,7 @@ export function CaseStudies() {
         </div>
 
         {/* Testimonial */}
-        <div className="rounded-lg border bg-card p-6">
+        {/* <div className="rounded-lg border bg-card p-6">
           <blockquote className="space-y-2">
             <p className="text-lg">
               &quot;Finally, a crawler that understands what we actually need for LLM applications. The content quality
@@ -85,7 +89,7 @@ export function CaseStudies() {
               — Senior Data Engineer, Fortune 500 Financial Services
             </footer>
           </blockquote>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

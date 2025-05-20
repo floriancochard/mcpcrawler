@@ -1,21 +1,12 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/home/hero";
-import { ValueProps } from "@/components/home/value-props";
-import { PerformanceReliability } from "@/components/home/performance-reliability";
-import { ProblemStatement } from "@/components/home/problem-statement";
-import { TechnicalArchitecture } from "@/components/home/technical-architecture";
-import { ContentExtraction } from "@/components/home/content-extraction";
 import { CaseStudies } from "@/components/home/case-studies";
-import { InteractiveDemo } from "@/components/home/interactive-demo";
-import { Pricing } from "@/components/home/pricing";
-import { ApiDocumentation } from "@/components/home/api-documentation";
+import { EnterpriseGrade } from "@/components/home/enterprise-grade";
 import { SecurityCompliance } from "@/components/home/security-compliance";
 import { DocumentationSupport } from "@/components/home/documentation-support";
-import TechnicalBlog from "@/components/home/technical-blog";
-import CommunityEcosystem from "@/components/home/community-ecosystem";
-import { Problem } from "@/components/home/problem";
-import { Solution } from "@/components/home/solution";
+import { BuiltForProduction } from "@/components/home/built-for-production";
+import Quote from "@/components/home/quote";
 
 export default function Home() {
   return (
@@ -26,25 +17,19 @@ export default function Home() {
         <Hero />
 
         {/* Key Value Props */}
-        <ValueProps />
-
-        {/* Interactive Demo Section */}
-        <InteractiveDemo />
+        {/* <ValueProps /> */}
 
         {/* Problem Section */}
-        <Problem />
+        <BuiltForProduction />
 
-        {/* Solution Section */}
-        <Solution />
+        {/* Interactive Demo Section */}
+        <EnterpriseGrade />
+
+        {/* Quote Section */}
+        <Quote />
 
         {/* Problem Statement Section */}
-        <ProblemStatement />
-
-        {/* Content Extraction Engine Section */}
-        <ContentExtraction />
-
-        {/* Technical Architecture Section */}
-        <TechnicalArchitecture />
+        {/* <ProblemStatement /> */}
 
         {/* Integration & Configurability Section */}
         {/* <IntegrationConfigurability /> */}
@@ -52,28 +37,20 @@ export default function Home() {
         {/* Use Cases & Applications Section */}
         {/* <UseCases /> */}
 
-        {/* Performance & Reliability Section */}
-        <PerformanceReliability />
-
         {/* Pricing Section */}
-        <Pricing />
-
-        {/* API Documentation Section */}
-        <ApiDocumentation />
+        {/* <Pricing /> */}
 
         {/* Security & Compliance Section */}
         <SecurityCompliance />
 
-        {/* Documentation & Support Section */}
-        <DocumentationSupport />
-
         {/* Case Studies Section */}
         <CaseStudies />
 
+        {/* Documentation & Support Section */}
+        <DocumentationSupport />
+
         {/* Technical Blog Section */}
-        <TechnicalBlog />
-        {/* Community & Ecosystem Section */}
-        <CommunityEcosystem />
+        {/* <TechnicalBlog /> */}
 
         {/* ROI Calculator Section */}
         {/* <RoiCalculator /> */}

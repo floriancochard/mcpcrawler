@@ -13,7 +13,6 @@ export interface SectionTwoColumnsItem {
 }
 
 export interface SectionTwoColumnsProps {
-  title: string;
   subtitle: string;
   image: {
     src: string;
@@ -25,7 +24,6 @@ export interface SectionTwoColumnsProps {
   reverse?: boolean;
 }
 export default function SectionTwoColumns({
-  title,
   subtitle,
   image,
   items,
@@ -59,7 +57,7 @@ export default function SectionTwoColumns({
             <Banknote className="w-4 h-4 text-primary" />
             {subtitle}
           </span>
-          <h2 className="text-2xl md:text-5xl font-semibold text-primary leading-tight">{title}</h2>
+          {/* <h2 className="text-2xl md:text-5xl font-semibold text-primary leading-tight">{title}</h2> */}
           <ul className="flex flex-col gap-3">
             <Separator className="my-4" />
             {items.map((item) => (
