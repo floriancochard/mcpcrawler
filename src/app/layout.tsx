@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://mcpcrawler.vercel.app",
     locale: "en_US",
-    siteName: "www.mcp-crawler.com",
+    siteName: "mcpcrawler.vercel.app",
     images: [{ url: "opengraph-image.png" }],
   },
   twitter: {
